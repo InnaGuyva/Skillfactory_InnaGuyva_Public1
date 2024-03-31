@@ -1,0 +1,258 @@
+{
+	"id": "8536c108-91ed-47f1-b9b1-61f674ab9557",
+	"name": "СКАН-Интерфакс",
+	"timestamp": "2024-03-26T08:20:42.207Z",
+	"collection_id": "33110751-f7b02487-c76b-4e1d-a0b1-8f6e2002dffe",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 27,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-26T08:20:16.469Z",
+	"totalFail": 5,
+	"results": [
+		{
+			"id": "9180b39b-3a22-49df-ad2c-edbae2dc1fe0",
+			"name": "Авторизация  и запись Токен",
+			"url": "https://gateway.scan-interfax.ru/api/v1/account/login",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Запись токен в переменную test_auth. Проверка - Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Запись токен в переменную test_auth. Проверка - Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				686,
+				389,
+				326,
+				235,
+				269,
+				173,
+				188,
+				177
+			],
+			"allTests": [
+				{
+					"Запись токен в переменную test_auth. Проверка - Status code is 200": true
+				},
+				{
+					"Запись токен в переменную test_auth. Проверка - Status code is 200": true
+				},
+				{
+					"Запись токен в переменную test_auth. Проверка - Status code is 200": true
+				},
+				{
+					"Запись токен в переменную test_auth. Проверка - Status code is 200": false
+				},
+				{
+					"Запись токен в переменную test_auth. Проверка - Status code is 200": false
+				},
+				{
+					"Запись токен в переменную test_auth. Проверка - Status code is 200": false
+				},
+				{
+					"Запись токен в переменную test_auth. Проверка - Status code is 200": false
+				},
+				{
+					"Запись токен в переменную test_auth. Проверка - Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "d8c00c10-21da-4d09-8d6e-24e7fbdda526",
+			"name": "Запись баланса",
+			"url": "https://gateway.scan-interfax.ru/api/v1/account/balance",
+			"time": 201,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Запись баланса и проверка-Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Запись баланса и проверка-Status code is 200": {
+					"pass": 8,
+					"fail": 0
+				}
+			},
+			"times": [
+				8356,
+				573,
+				499,
+				2473,
+				236,
+				190,
+				249,
+				201
+			],
+			"allTests": [
+				{
+					"Запись баланса и проверка-Status code is 200": true
+				},
+				{
+					"Запись баланса и проверка-Status code is 200": true
+				},
+				{
+					"Запись баланса и проверка-Status code is 200": true
+				},
+				{
+					"Запись баланса и проверка-Status code is 200": true
+				},
+				{
+					"Запись баланса и проверка-Status code is 200": true
+				},
+				{
+					"Запись баланса и проверка-Status code is 200": true
+				},
+				{
+					"Запись баланса и проверка-Status code is 200": true
+				},
+				{
+					"Запись баланса и проверка-Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7a5c7aed-baee-4117-9fd5-bc8ef2c9525e",
+			"name": "Получение тем публикаций",
+			"url": "https://gateway.scan-interfax.ru/api/v1/entities/subjects?index=0&pageSize=5",
+			"time": 165,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Получение тем публикаций и проверка на Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Получение тем публикаций и проверка на Status code is 200": {
+					"pass": 8,
+					"fail": 0
+				}
+			},
+			"times": [
+				214,
+				248,
+				272,
+				170,
+				168,
+				146,
+				756,
+				165
+			],
+			"allTests": [
+				{
+					"Получение тем публикаций и проверка на Status code is 200": true
+				},
+				{
+					"Получение тем публикаций и проверка на Status code is 200": true
+				},
+				{
+					"Получение тем публикаций и проверка на Status code is 200": true
+				},
+				{
+					"Получение тем публикаций и проверка на Status code is 200": true
+				},
+				{
+					"Получение тем публикаций и проверка на Status code is 200": true
+				},
+				{
+					"Получение тем публикаций и проверка на Status code is 200": true
+				},
+				{
+					"Получение тем публикаций и проверка на Status code is 200": true
+				},
+				{
+					"Получение тем публикаций и проверка на Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a2984590-46b7-4972-9bb6-74777ae06e2d",
+			"name": "Получение документов в формате ScanDoc",
+			"url": "https://gateway.scan-interfax.ru/api/v1/documents",
+			"time": 198,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Получение документов в формате ScanDoc и проверка на Status code is 200": {
+					"pass": 8,
+					"fail": 0
+				}
+			},
+			"times": [
+				456,
+				384,
+				377,
+				307,
+				182,
+				188,
+				280,
+				198
+			],
+			"allTests": [
+				{
+					"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+				},
+				{
+					"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+				},
+				{
+					"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+				},
+				{
+					"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+				},
+				{
+					"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+				},
+				{
+					"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+				},
+				{
+					"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+				},
+				{
+					"Получение документов в формате ScanDoc и проверка на Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 8,
+	"totalTime": 19731,
+	"collection": {
+		"requests": [
+			{
+				"id": "9180b39b-3a22-49df-ad2c-edbae2dc1fe0",
+				"method": "POST"
+			},
+			{
+				"id": "d8c00c10-21da-4d09-8d6e-24e7fbdda526",
+				"method": "GET"
+			},
+			{
+				"id": "7a5c7aed-baee-4117-9fd5-bc8ef2c9525e",
+				"method": "GET"
+			},
+			{
+				"id": "a2984590-46b7-4972-9bb6-74777ae06e2d",
+				"method": "POST"
+			}
+		]
+	}
+}
